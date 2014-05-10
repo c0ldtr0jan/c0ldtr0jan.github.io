@@ -1,0 +1,366 @@
+body {
+	
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	margin: 0;
+	font-size: 100%;
+	font-weight: 300;
+	background: #efefef;
+	overflow: hidden;
+	
+}
+
+header {
+	
+	position: relative;
+	z-index: 9997;
+	background: #666;
+	border-bottom: 1px solid #ffae00;
+	
+}
+
+.container {
+	
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: left;
+	
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffae00;
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 30px;
+    margin: 0 0 15px 0;
+}
+
+h2 {
+    font-family: 'Ubuntu', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+}
+
+a {
+	
+	text-decoration: none;
+	color: #ffae00;
+	
+}
+
+input[type=text] {
+	
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	background: white;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-weight: 300;
+	color: #666;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+}
+
+#logo {
+	
+	width: 100%;
+	text-align: center;
+	
+}
+
+#logo a {
+	
+	display: inline-block;
+	margin: 0px auto;
+	text-align: left;
+	
+}
+
+#logo .image {
+	
+	float: left;
+	width: 80px;
+	margin: 10px auto;
+	
+}
+
+#logo .text {
+	
+	float: left;
+	
+}
+
+#logo h1 {
+	
+	margin: 20px 0 0 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	
+}
+
+#logo h2 {
+	
+	margin: 10px 0 20px 10px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #efefef;
+	font-size: 20px;
+	line-height: 20px;
+	
+}
+
+nav a {
+	
+	text-align: center;
+	position: relative;
+	display: block;
+	color: #666;
+	background: white;
+	font-size: 20px;
+	padding: 20px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	
+}
+
+nav a:hover {
+	
+	background-color: #ddd;
+	color: #444;
+	
+}
+
+nav {
+	
+	display: inline-block;
+	float: right;
+	width: 100%;
+	
+}
+
+nav ul {
+
+	display: none;
+	float: left;
+	width: 100%;
+
+}
+
+nav ul li {
+	
+	float: left;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	
+}
+
+nav ul li.selected a {
+	
+	color: #ffae00;
+	
+}
+
+nav ul li.selected a:after {
+	
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5px;
+	background: #ffae00;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 9997;
+	
+}
+
+nav div.search {
+	
+	display: none;
+	position: absolute;
+	top: 0;
+	float: left;
+	width: 600px;
+	margin-left: -600px;
+	padding: 23px 0 23px 0;
+	right: 40px;
+	background: white;
+	
+}
+
+nav div.search input {
+	
+	width: 100%;
+	vertical-align: middle;
+	
+}
+
+nav a.search {
+	
+	display: none;
+	float: left;
+	background: white;
+	text-indent: -9999px;
+	padding: 34px 20px;
+	background: url("../images/Search.png") no-repeat center center;
+	
+}
+
+nav a.phoneMenu {
+	
+	border-top: 1px solid #ffae00;
+	
+}
+
+nav a.phoneMenu:hover {
+	
+	background: white;
+	
+}
+
+nav a.phoneMenu:after {
+	
+	content: '';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #ccc transparent transparent transparent;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	
+}
+
+nav a.phoneMenu.active:after {
+	
+	content: '';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #ccc transparent;
+	
+}
+
+nav a.search:hover {
+	
+	background-color: #ddd;
+	
+}
+
+nav a.search.cancel {
+	
+	background: url("../images/Cross.jpg") no-repeat center center;
+	
+}
+
+section {
+	
+	clear: both;
+	
+}
+
+#breadCrumb {
+	
+	display: none;
+	font-size: 16px;
+	padding: 0 10px;
+	
+}
+
+#content {
+	
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	background: white;
+	border: none;
+	height: 2000px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 20px;
+	
+}
+
+footer {
+	
+	display: block;
+	font-size: 16px;
+	line-height: 16px;
+	
+}
+
+footer .container {
+	
+	border-top: 1px solid #ccc;
+	text-align: center;
+	
+}
+
+footer p {
+	
+	display: inline-block;
+	margin: 0;
+	margin: 10px;
+	
+}
+
+#up768 {
+	
+	display: none;
+	
+}
+
+.icon {
+	
+	display: block;
+	margin: 0px auto 15px auto;
+	background: url("../images/icon_sprite.png") no-repeat top left;
+	
+}
+
+.sprite-about{ background-position: 0 0; width: 39px; height: 41px; } 
+.sprite-about_hover{ background-position: 0 -91px; width: 39px; height: 41px; } 
+.sprite-blog{ background-position: 0 -182px; width: 41px; height: 41px; } 
+.sprite-blog_hover{ background-position: 0 -273px; width: 41px; height: 41px; } 
+.sprite-contact{ background-position: 0 -364px; width: 43px; height: 41px; } 
+.sprite-contact_hover{ background-position: 0 -455px; width: 43px; height: 41px; } 
+.sprite-projects{ background-position: 0 -546px; width: 41px; height: 41px; } 
+.sprite-projects_hover{ background-position: 0 -637px; width: 41px; height: 41px; } 
