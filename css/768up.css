@@ -164,7 +164,7 @@
 		display: inline-block;
 		width: 32%;
 		margin: 0;
-		padding: 0;
+		padding: 5px;
 		box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -174,8 +174,36 @@
 	
 	.proj-list li a {
 		
+		position: relative;
 		display: block;
 		border: 10px solid #efefef;
+		overflow: hidden;
+		
+	}
+	
+	.proj-list li a span.info {
+		
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255,255,255,0.5);
+		padding: 5px;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: left;
+		-webkit-transition: all 1.5s ease;
+	    -moz-transition: all 1.5s ease;
+	    -o-transition: all 1.5s ease;
+	    -ms-transition: all 1.5s ease;
+	    transition: all 1.5s ease;
+		
+	}
+	
+	.proj-list li a:hover span.info {
+		
+		display: block;
 		
 	}
 	
