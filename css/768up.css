@@ -56,7 +56,24 @@
 	
 	nav a.search {
 	
+		position: relative;
 		display: block;
+		color: #efefef;
+		background: #666;
+		font-size: 18px;
+		line-height: 20px;
+		padding: 40px 15px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		
+	}
+	
+	nav a.search:hover {
+		
+		color: #666;
 		
 	}
 	
@@ -131,6 +148,34 @@
 		float: right;
 		width: 28%;
 		margin-top: 10px;
+		
+	}
+	
+	.proj-list {
+		
+		width: 100%;
+		list-style: none;
+		text-align: center;
+		
+	}
+	
+	.proj-list li {
+		
+		display: inline-block;
+		width: 32%;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		
+		
+	}
+	
+	.proj-list li a {
+		
+		display: block;
+		border: 10px solid #efefef;
 		
 	}
 	

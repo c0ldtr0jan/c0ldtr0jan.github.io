@@ -15,13 +15,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<!-- Styles -->
-	<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/base.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/481up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/768up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/960up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/1140up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/reset.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/base.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/481up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/768up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/960up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/1140up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen">
 	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel|Ubuntu:300,400" rel="stylesheet" type="text/css" />
 </head>
 <body class="home">
@@ -30,7 +30,7 @@
 			<div id="logo">
 				<a href="#" class="clearfix">
 					<div class="image">
-						<img src="./images/mark.png" width="100%"/>
+						<img src="../images/mark.png" width="100%"/>
 					</div>
 					<div class="text">
 						<h1>Mark Griffiths</h1>
@@ -42,7 +42,7 @@
 				<a href="#" class="phoneMenu">Menu</a>
 				<ul>
 					<li><a href="#">About Me</a></li>
-					<li><a href="#">Projects</a></li>
+					<li class="selected"><a href="#">Projects</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact Me</a></li>
 				</ul>
@@ -56,11 +56,15 @@
 	<section>
 		<div class="container clearfix">
 			<div id="breadCrumb">
-			Home
+			Projects
 			</div>
 			<div id="content">
-				<h1>Welcome</h1>
-				<p>Welcome to Impulse Design</p>
+				<h1>Projects</h1>
+				<ul class="proj-list">
+					<li><a href="#"><img src="http://dummyimage.com/252x189/000000/ffffff.jpg&text=Project+1" width="100%" /></a></li>
+					<li><a href="#"><img src="http://dummyimage.com/252x189/000000/ffffff.jpg&text=Project+2" width="100%" /></a></li>
+					<li><a href="#"><img src="http://dummyimage.com/252x189/000000/ffffff.jpg&text=Project+3" width="100%" /></a></li>
+				</ul>
 			</div>
 			<aside>
 				<div class="panel">
@@ -80,12 +84,12 @@
 	
 	<!-- Scripts -->
 	<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="../js/css3-mediaqueries.js"></script>
 	<![endif]-->
-	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
 	
 </body>
 </html>
