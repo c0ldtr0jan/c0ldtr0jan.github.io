@@ -42,10 +42,20 @@ h1 {
 
 h2 {
     font-family: 'Ubuntu', cursive;
+    color: #ffae00;
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
     margin: 0 0 15px 0;
+}
+
+h3 {
+    font-family: 'Ubuntu', cursive;
+    color: #ffae00;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 10px 0;
 }
 
 p {
@@ -308,14 +318,40 @@ section {
 	
 	position: relative;
 	width: 100%;
-	margin-bottom: 20px;
 	background: white;
 	border: none;
-	height: 2000px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 20px;
+	
+}
+
+aside {
+	
+	display: block;
+	
+}
+
+.twitter-timeline {
+	
+	width: 100% !important;
+	
+}
+
+.panel {
+		
+	display: block;
+	background: white;
+	padding: 20px;		
+		
+}
+
+.panel h3 {
+	
+	padding: 10px 0;
+	border-bottom: 1px solid #F5EAD1;
+	border-top: 1px solid #F5EAD1;
 	
 }
 

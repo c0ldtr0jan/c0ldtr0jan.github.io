@@ -2,7 +2,7 @@
 	
 	.container {
 		
-		width: 960px;
+		width: 90%;
 		
 	}
 	
@@ -15,6 +15,15 @@
 	#content {
 		
 		border-left: 1px solid #eaeaea;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		
+	}
+	
+	.panel {
+		
+		border-right: 1px solid #eaeaea;
 		border-radius: 10px;
 		-moz-border-radius: 10px;
 		-webkit-border-radius: 10px;
