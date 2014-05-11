@@ -31,6 +31,12 @@ header {
 	
 }
 
+.hidden {
+	
+	display: none !important;
+	
+}
+
 h1 {
     font-family: 'Ubuntu', sans-serif;
     color: #ffae00;
