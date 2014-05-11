@@ -68,7 +68,6 @@ p {
 
 a {
 	
-	text-decoration: none;
 	color: #ffae00;
 	
 }
@@ -138,6 +137,7 @@ input[type=text] {
 
 nav a {
 	
+	text-decoration: none;
 	text-align: center;
 	position: relative;
 	display: block;
@@ -323,6 +323,124 @@ section {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 20px;
+	
+}
+
+#content h3 {
+	
+	padding: 10px 0;
+	border-bottom: 1px solid #F5EAD1;
+	border-top: 1px solid #F5EAD1;
+
+}
+
+h3.sliderHead {
+		
+	margin: 0;
+	
+}
+
+.slider-outer {
+	
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+.slider-outer a.navigation {
+	
+	display: none;
+	position: absolute;
+	z-index: 9996;
+	font-size: 30px;
+	line-height: 30px;
+	top: 50%;
+	margin-top: -25px;
+	padding: 10px;
+	background: white;
+	color: black;
+	opacity: 0.5;
+	
+}
+
+.slider-outer a.navigation:hover {
+	
+	opacity: 1.0;
+	
+}
+
+a.slider-left {
+	
+	left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+}
+
+a.slider-right {
+	
+	right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}
+
+.slider-inner {
+	
+	width: 500%;
+	
+}
+
+.proj-list {
+	
+	width: 20%;
+	list-style: none;
+	text-align: center;
+	
+}
+
+.proj-list li {
+		
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 2px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	
+}
+
+.proj-list li a {
+		
+	position: relative;
+	display: block;
+	border: 5px solid #eaeaea;
+	overflow: hidden;
+	
+}
+
+.proj-list li a span.info {
+		
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,0.5);
+	padding: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: left;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease;
 	
 }
 

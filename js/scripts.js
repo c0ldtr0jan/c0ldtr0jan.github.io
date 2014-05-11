@@ -16,4 +16,20 @@ $(function(){
 		
 	});
 	
+	$(".slider-outer a.navigation").bind('click', function(e){
+		
+		if ($(this).hasClass("slider-left")) {
+			
+			$(this).parent().find('.slider-inner').animate({"margin-left":"+=100%"});
+			
+		} else {
+			
+			$(this).parent().find('.slider-inner').animate({"margin-left":"-=100%"});
+			
+		}
+		
+		e.preventDefault();
+		
+	});
+	
 });
