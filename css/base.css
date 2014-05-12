@@ -201,10 +201,57 @@ nav {
 
 nav ul {
 
-	display: none;
+	position: relative;
+	display: inline-table;
 	float: left;
 	width: 100%;
 
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul ul {
+	
+	display: none;
+	position: absolute; 
+	top: 100%;
+	width: auto;
+	border: 1px solid #ffae00;
+	border-top: none;
+	z-index: 9999;
+	
+}
+
+nav ul ul:after {
+	
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 45px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #ffae00 transparent;
+	
+}
+
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #ffae00;
+	position: relative;
+}
+
+nav ul ul li a {
+	
+	padding: 20px;
+	
+}
+
+nav ul li:hover {
+
+	background-color: #ddd;
+	
 }
 
 nav ul li {
@@ -216,13 +263,19 @@ nav ul li {
 	
 }
 
-nav ul li.selected a {
+nav ul li:hover > ul {
+	
+	display: block;
+	
+}
+
+nav ul li.selected > a {
 	
 	color: #ffae00;
 	
 }
 
-nav ul li.selected a:after {
+nav ul li.selected > a:after {
 	
 	content: '';
 	position: absolute;
