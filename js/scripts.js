@@ -1,4 +1,18 @@
 $(function(){
+		
+	$(window).resize(function(){
+		
+		if (!$("#up768").is(":visible")) {
+		
+			$('.slider-inner').css({"margin-left":"0"});
+			$(".slider-left").addClass("hidden");
+			$(".slider-right").removeClass("hidden");
+			$('.slider-inner ul.active').removeClass("active");
+			$('.slider-inner').children(":nth-child(1)").addClass("active");
+			
+		}
+		
+	});
 	
 	$("a.phoneMenu").bind('click', function(e){
 		

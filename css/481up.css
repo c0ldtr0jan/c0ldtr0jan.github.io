@@ -1,0 +1,21 @@
+@media only screen and (min-width: 481px) {
+
+	a.headingMore span {
+	
+		display: inline;
+		
+	}
+	
+	.proj-list:nth-child(-n+2) {
+	
+		display: block;
+		
+	}
+
+	.proj-list li {
+		
+		width: 50%;
+		
+	}
+
+}

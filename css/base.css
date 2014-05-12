@@ -346,6 +346,19 @@ h3.sliderHead {
 	
 }
 
+a.headingMore {
+	
+	float: right;
+	font-size: 14px;
+	
+}
+
+a.headingMore span {
+	
+	display: none;
+	
+}
+
 .slider-outer {
 	
 	position: relative;
@@ -402,6 +415,7 @@ a.slider-right {
 
 .proj-list {
 	
+	display: none;
 	width: 20%;
 	list-style: none;
 	text-align: center;
@@ -409,7 +423,7 @@ a.slider-right {
 }
 
 .proj-list li {
-		
+	
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -418,6 +432,12 @@ a.slider-right {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	
+	
+}
+
+.proj-list:nth-child(-n+1) {
+	
+	display: block;
 	
 }
 

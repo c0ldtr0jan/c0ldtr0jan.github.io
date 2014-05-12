@@ -122,6 +122,34 @@
 		
 		display: block;
 		margin-top: 110px;
+		color: #aaa;
+		
+	}
+	
+	#breadCrumb a {
+		
+		color: #aaa;
+		text-decoration: none;
+		
+	}
+	
+	#breadCrumb a.active {
+		
+		color: #666;
+		
+	}
+	
+	#breadCrumb a:hover {
+		
+		text-decoration: underline;
+		color: #666;
+		
+	}
+	
+	#breadCrumb i {
+		
+		display: inline-block;
+		padding: 0 10px;
 		
 	}
 	
@@ -153,6 +181,12 @@
 		
 		float: left;
 		
+	}
+	
+	.proj-list:nth-child(n+2) {
+	    
+	    display: block;
+	       
 	}
 	
 	.proj-list li {
