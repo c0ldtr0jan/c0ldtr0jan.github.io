@@ -1,6 +1,6 @@
 $(function(){
 	
-	$("a.phoneMenu").bind('click', function(){
+	$("a.phoneMenu").bind('click', function(e){
 		
 		if ($("nav ul").is(":visible")) {
 			
@@ -13,6 +13,8 @@ $(function(){
 			$("a.phoneMenu").addClass("active");
 			
 		}
+		
+		e.preventDefault();
 		
 	});
 	
