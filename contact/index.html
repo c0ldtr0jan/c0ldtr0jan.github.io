@@ -15,22 +15,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<!-- Styles -->
-	<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/base.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/481up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/768up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/960up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/1140up.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/reset.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/base.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/481up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/768up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/960up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/1140up.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="../css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen">
 	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel|Ubuntu:300,400" rel="stylesheet" type="text/css" />
 </head>
 <body class="home">
 	<header>
 		<div class="container clearfix">
 			<div id="logo">
-				<a href="./" class="clearfix">
+				<a href="../" class="clearfix">
 					<div class="image">
-						<img src="./images/mark.png" width="100%"/>
+						<img src="../images/mark.png" width="100%"/>
 					</div>
 					<div class="text">
 						<h1>Mark Griffiths</h1>
@@ -41,10 +41,10 @@
 			<nav class="clearfix">
 				<a href="#" class="phoneMenu">Menu</a>
 				<ul>
-					<li><a href="./about/">About Me</a></li>
-					<li><a href="./projects/">Projects</a></li>
-					<li><a href="./blog/">Blog</a></li>
-					<li><a href="./contact/">Contact Me</a></li>
+					<li><a href="../about/">About Me</a></li>
+					<li><a href="../projects/">Projects</a></li>
+					<li><a href="../blog/">Blog</a></li>
+					<li class="selected"><a href="../contact/">Contact Me</a></li>
 				</ul>
 				<div class="search">
 					<input type="text" placeholder="Enter search term here and then press enter..."/>
@@ -56,10 +56,31 @@
 	<section>
 		<div class="container clearfix">
 			<div id="breadCrumb">
-			<a href="./">Home</a>
+			<a href="./">Contact Me</a>
 			</div>
 			<div id="content">
-				<h1>Welcome</h1>
+				<h1>Contact Me</h1>
+				<p>If you have any questions about my work or would like me to work on a project for you please fill out the form below and I will get back to you as soon as I can.</p>
+				<hr>
+				<p>
+				Please fill out all required (<span class="required">*</span>) fields.
+				</p>
+				<p>
+				<label>Name: <span class="required">*</span></label>
+				<input type="text" name="name" class="contact-input" />
+				</p>
+				<p>
+				<label>Company Name:</label>
+				<input type="text" name="name" class="contact-input" />
+				</p>
+				<p>
+				<label>Email: <span class="required">*</span></label>
+				<input type="text" name="name" class="contact-input" />
+				</p>
+				<p>
+				<label>Question: <span class="required">*</span></label>
+				<textarea name="name" cols="20" rows="10" class="contact-input"></textarea>
+				</p>
 			</div>
 			<aside>
 				<div class="panel">
@@ -79,12 +100,12 @@
 	
 	<!-- Scripts -->
 	<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="../js/css3-mediaqueries.js"></script>
 	<![endif]-->
-	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
 	
 </body>
 </html>

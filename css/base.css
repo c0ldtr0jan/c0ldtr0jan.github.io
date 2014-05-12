@@ -78,15 +78,40 @@ a {
 	
 }
 
+label {
+	
+	display: block;
+	width: 100%;
+	line-height: 40px;
+	font-weight: 700;
+	
+}
+
 input[type=text] {
 	
-	font-family: 'Lato', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 20px;
 	background: white;
 	border: 1px solid #ccc;
 	padding: 10px;
 	font-weight: 300;
 	color: #666;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+}
+
+textarea {
+	
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	background: white;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-weight: 300;
+	color: #666;
+	resize: none;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -532,6 +557,18 @@ footer p {
 	display: block;
 	margin: 0px auto 15px auto;
 	background: url("../images/icon_sprite.png") no-repeat top left;
+	
+}
+
+.contact-input {
+	
+	width: 100%;
+	
+}
+
+.required {
+	
+	color: #ffae00;
 	
 }
 
