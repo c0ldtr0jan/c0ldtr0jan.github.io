@@ -43,7 +43,6 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://placekitten.com/411/411);
     visibility: visible;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
