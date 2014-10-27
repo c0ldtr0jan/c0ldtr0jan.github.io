@@ -1,11 +1,172 @@
-$(function(){
+var outerMargin = 50;
+var hexGap = 50;
+var boxPadding = 20;
+
+function resizeHex() {
 
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
 
-	var outerMargin = 20;
-	var hexGap = 20;
-	var boxPadding = 20;
+	if (windowHeight > windowWidth) {
+
+		var boxHeight = (parseFloat(windowWidth) - (outerMargin * 2));
+
+	} else {
+
+		var boxHeight = (parseFloat(windowHeight) - (outerMargin * 2));
+
+	}
+
+	var hexHeight = ((boxHeight - (hexGap * 2)) / 3);
+
+	var sideLength = (hexHeight / (Math.sqrt(3)));
+	var triHeight = (2 * sideLength) / 2;
+
+	var triSectHeight = (hexHeight / 2);
+
+	var triWidth = Math.sqrt((sideLength * sideLength) - (triSectHeight * triSectHeight));
+
+	var hexWidth = (sideLength + (triWidth * 2));
+
+	var boxWidth = (sideLength + (hexWidth * 2) + (hexGap * 2)); //(sideLength * 3) + (hexGap * 2);
+
+	var hexOffset = (((hexHeight * 2) - hexWidth) / 2);
+
+	var count = 1;
+
+	$("#box").css({
+		"position":"absolute", 
+		"height":boxHeight + "px",  
+		"width":boxWidth + "px", 
+		"top":"50%", 
+		"margin-top": - (boxHeight / 2) + "px", 
+		"left":"50%",
+		"padding":"0 " + boxPadding + "px", 
+		"margin-left": - ((boxWidth + (boxPadding * 2)) / 2) + "px",
+		"overflow":"hidden"
+	});
+
+	while (count <= 7) {
+
+		switch (count) {
+
+			case 1:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",
+					"top": (hexHeight + (hexGap / 2)),  
+					"left":"100%", 
+					"margin-left": - (hexOffset + hexWidth + boxPadding) + "px",
+					"margin-top": - (hexHeight / 2) + "px"
+
+				});
+
+			break;
+
+			case 2:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",	
+					"top": ((hexHeight * 2) + ((hexGap / 2) * 3)),  
+					"left":"100%", 
+					"margin-left": - (hexOffset + hexWidth + boxPadding) + "px",
+					"margin-top": - (hexHeight / 2) + "px"
+
+				});
+
+			break;
+
+			case 3:
+
+				$("#box .hex" + count).css({
+ 					
+ 					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",
+					"top":"100%",  
+					"left":"50%", 
+					"margin-left": - hexHeight + "px",
+					"margin-top": - hexHeight + "px"
+
+				});
+
+			break;
+
+			case 4:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",
+					"top": ((hexHeight * 2) + ((hexGap / 2) * 3)),  
+					"left":"0", 
+					"margin-left": - (hexOffset - boxPadding) + "px",
+					"margin-top": - (hexHeight / 2) + "px"
+
+				});
+
+			break;
+
+			case 5:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",	
+					"top": (hexHeight + (hexGap / 2)),  
+					"left":"0", 
+					"margin-left": - (hexOffset - boxPadding) + "px",
+					"margin-top": - (hexHeight / 2) + "px"
+
+				});
+
+			break;
+
+			case 6:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",
+					"top":"0",  
+					"left":"50%", 
+					"margin-left": - hexHeight + "px",
+					"margin-top": "0px"
+
+				});
+
+			break;
+
+			case 7:
+
+				$("#box .hex" + count).css({
+					
+					"height":hexHeight + "px", 
+					"width":(hexHeight * 2) + "px",
+					"top":"50%",
+					"margin-top": - (hexHeight / 2) + "px",  
+					"left":"50%", 
+					"margin-left": - hexHeight + "px"
+
+				});
+
+			break;
+
+		}
+
+		count++;
+
+	}
+
+}
+
+$(function(){
+
+	var windowHeight = $(window).height();
+	var windowWidth = $(window).width();
 
 	if (windowHeight > windowWidth) {
 
@@ -192,90 +353,10 @@ $(function(){
 
 	}, (animationTime / 6));
 
-	/*
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
+	$(window).resize(function(){
 
-	$("#box .hex").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"top":"0",  
-		"left":"50%", 
-		"margin-left": - hexHeight + "px"
+		resizeHex();
 
 	});
-
-	
-
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
-
-	$("#box .hex:last").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"bottom":"0",  
-		"left":"50%", 
-		"margin-left": - hexHeight + "px"
-
-	});
-
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
-
-	$("#box .hex:last").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"top": (hexHeight + (hexGap / 2)),  
-		"left":"100%", 
-		"margin-left": - (hexOffset + hexWidth + boxPadding) + "px",
-		"margin-top": - (hexHeight / 2) + "px"
-
-	});
-
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
-
-	$("#box .hex:last").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"top": ((hexHeight * 2) + ((hexGap / 2) * 3)),  
-		"left":"100%", 
-		"margin-left": - (hexOffset + hexWidth + boxPadding) + "px",
-		"margin-top": - (hexHeight / 2) + "px"
-
-	});
-
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
-
-	$("#box .hex:last").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"top": (hexHeight + (hexGap / 2)),  
-		"left":"0", 
-		"margin-left": - (hexOffset - boxPadding) + "px",
-		"margin-top": - (hexHeight / 2) + "px"
-
-	});
-
-	$("#box").append('<div class="hex"><div class="in1"><div class="in2"></div></div></div>');
-
-	$("#box .hex:last").css({
-
-		"position":"absolute", 
-		"height":hexHeight + "px", 
-		"width":(hexHeight * 2) + "px", 
-		"top": ((hexHeight * 2) + ((hexGap / 2) * 3)),  
-		"left":"0", 
-		"margin-left": - (hexOffset - boxPadding) + "px",
-		"margin-top": - (hexHeight / 2) + "px"
-
-	});
-	*/
 
 });
