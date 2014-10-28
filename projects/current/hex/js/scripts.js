@@ -1,6 +1,6 @@
-var outerMargin = 50;
-var hexGap = 50;
-var boxPadding = 20;
+var outerMargin = 10;
+var hexGap = 10;
+var boxPadding = 5;
 
 function resizeHex() {
 
